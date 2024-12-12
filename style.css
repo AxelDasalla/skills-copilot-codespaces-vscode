@@ -1,0 +1,105 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    background: #444;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1 1 25%;
+    background: #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+}
+
+/* Main Article Section */
+.article {
+    flex: 1 1 70%;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .sidebar, .article {
+        flex: 1 1 100%;
+    }
+}
